@@ -10,7 +10,6 @@ License:	GPL
 Group:		System/Libraries
 URL:		http://www.asterisk.org/
 Source0:	http://ftp.digium.com/pub/libss7/%{name}-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 libss7 is a userspace library that is used for providing SS7 protocol services
@@ -68,24 +67,11 @@ make \
     INSTALL_PREFIX="%{buildroot}" \
     install
 
-%if %mdkversion < 200900
-%post -n %{libname} -p /sbin/ldconfig
-%endif
-
-%if %mdkversion < 200900
-%postun -n %{libname} -p /sbin/ldconfig
-%endif
-
-%clean
-rm -rf %{buildroot}
-
 %files -n %{libname}
-%defattr(-,root,root)
 %doc ChangeLog README NEWS*
 %{_libdir}/lib*.so.%{major}*
 
 %files -n %{develname}
-%defattr(-,root,root)
 %{_includedir}/*.h
 %{_libdir}/*.so
 %{_libdir}/*.a
