@@ -5,7 +5,7 @@
 Summary:	Provides SS7 protocol services to applications
 Name:		libss7
 Version:	1.0.2
-Release:	%mkrel 3
+Release:	4
 License:	GPL
 Group:		System/Libraries
 URL:		http://www.asterisk.org/
@@ -61,8 +61,6 @@ find -name "Makefile" | xargs perl -pi -e 's|\$\(INSTALL_BASE\)/lib|\$\(INSTALL_
 %make CFLAGS="%{optflags} -fPIC -DPIC -D_REENTRANT"
 
 %install
-rm -rf %{buildroot}
-
 make \
     INSTALL_PREFIX="%{buildroot}" \
     install
