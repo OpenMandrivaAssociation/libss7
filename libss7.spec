@@ -5,7 +5,7 @@
 Summary:	Provides SS7 protocol services to applications
 Name:		libss7
 Version:	1.0.2
-Release:	5
+Release:	6
 License:	GPL
 Group:		System/Libraries
 URL:		http://www.asterisk.org/
