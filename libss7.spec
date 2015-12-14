@@ -1,6 +1,7 @@
 %define	major 1
-%define libname %mklibname ss7 _%{major}
+%define libname %mklibname ss7 %{major}
 %define develname %mklibname ss7 -d
+%define debug_package %{nil}
 
 Summary:	Provides SS7 protocol services to applications
 Name:		libss7
