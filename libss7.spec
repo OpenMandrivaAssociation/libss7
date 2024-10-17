@@ -9,7 +9,7 @@ Version:	1.0.2
 Release:	15
 License:	GPL
 Group:		System/Libraries
-URL:		http://www.asterisk.org/
+URL:		https://www.asterisk.org/
 Source0:	http://ftp.digium.com/pub/libss7/%{name}-%{version}.tar.gz
 
 %description
