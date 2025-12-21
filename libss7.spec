@@ -12,6 +12,7 @@ Group:		System/Libraries
 URL:		https://www.asterisk.org/
 Source0:	http://ftp.digium.com/pub/libss7/%{name}-%{version}.tar.gz
 
+BuildRequires:	make
 %description
 libss7 is a userspace library that is used for providing SS7 protocol services
 to applications.  It has a working MTP2, MTP3, and ISUP for ITU and ANSI style
